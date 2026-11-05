@@ -333,6 +333,7 @@ img { display: block; max-width: 100%; }
 
 .gallery-head {
   margin-bottom: clamp(40px, 6vw, 72px);
+  text-align: center;
 }
 
 .gallery-head h2 {
@@ -345,28 +346,23 @@ img { display: block; max-width: 100%; }
 .gallery-head h2:focus { outline: none; }
 .gallery-head h2:focus-visible { outline: 2px solid var(--ink); }
 
-.project { display: grid; gap: 20px; }
-
-.project-lead {
-  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-  gap: clamp(24px, 4vw, 56px);
-  align-items: center;
-  padding-bottom: clamp(48px, 7vw, 88px);
-}
-
-.project-pair {
+.projects {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(24px, 4vw, 48px);
-  padding-top: clamp(48px, 7vw, 88px);
+  width: min(1120px, 100%);
+  gap: clamp(48px, 7vw, 88px);
+  margin: 0 auto;
 }
 
-/* The second card sits lower so the pair reads as two separate pieces, not a template row. */
-.project-pair .project:nth-child(2) { margin-top: clamp(0px, 8vw, 96px); }
+.project {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  align-items: center;
+  gap: clamp(24px, 4vw, 56px);
+}
 
 .thumb {
   position: relative;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 3 / 2;
   border-radius: 20px;
   overflow: hidden;
   background: #e6e6e1;
@@ -611,8 +607,6 @@ img { display: block; max-width: 100%; }
   letter-spacing: -0.03em;
 }
 
-.project-lead h3 { font-size: clamp(28px, 3.6vw, 40px); }
-
 .project-body > p:not(.project-meta) {
   margin-top: 12px;
   color: var(--ink-2);
@@ -740,10 +734,7 @@ img { display: block; max-width: 100%; }
 /* ---------- Small screens ---------- */
 
 @media (max-width: 760px) {
-  .project-lead,
-  .project-pair { grid-template-columns: 1fr; }
-
-  .project-pair .project:nth-child(2) { margin-top: 32px; }
+  .project { grid-template-columns: 1fr; }
   .topbar-name { display: none; }
   .back { margin-right: auto; }
 }

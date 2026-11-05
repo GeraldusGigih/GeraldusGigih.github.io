@@ -79,26 +79,26 @@
 
       <!-- Thumbnails: put the image in assets/ under the filename in src; until then the frame shows a placeholder.
            Two or more <img> in one .thumb-track turn that frame into a carousel. -->
-      <article class="project project-lead" data-reveal>
-        <figure class="thumb">
-          <div class="thumb-track">
-            <img src="assets/simbg4-1.jpg" alt="SIMBG4: Beranda dengan ringkasan pemasok, pesanan, dan batch kedaluwarsa">
-            <img src="assets/simbg4-2.jpg" alt="SIMBG4: daftar persediaan per dapur dengan kondisi stok">
-            <img src="assets/simbg4-3.jpg" alt="SIMBG4: daftar pesanan pembelian dengan filter status, dapur, dan tanggal">          </div>
-          <figcaption class="thumb-empty mono">assets/simbg4-1.jpg</figcaption>
-        </figure>
-        <div class="project-body">
-          <p class="project-meta mono"><span>01</span>Tugas Individu - Arsitektur dan Pemrograman Aplikasi Perusahaan 2026</p>
-          <h3>SIMBG4: Pengadaan dan Persediaan Dapur</h3>
-          <p>Modul SIMBG untuk petugas dapur. Isinya pencatatan pemasok, pesanan bahan, penerimaan barang, stok per batch, sampai koreksi dan pembuangan stok kedaluwarsa.</p>
-          <dl class="stack">
-            <div><dt class="mono">frontend</dt><dd><ul class="chips"><li>Vue 3</li><li>TypeScript</li><li>Vite</li><li>Pinia</li><li>Axios</li><li>Vitest</li></ul></dd></div>
-            <div><dt class="mono">backend</dt><dd><ul class="chips"><li>Java 25</li><li>Spring Boot 4</li><li>Spring Data JPA</li><li>PostgreSQL 18</li><li>Docker Compose</li></ul></dd></div>
-          </dl>
-        </div>
-      </article>
+      <section class="projects" aria-label="Daftar proyek">
+        <article class="project" data-reveal>
+          <figure class="thumb">
+            <div class="thumb-track">
+              <img src="assets/simbg4-1.jpg" alt="Sistem Informasi Pengadaan dan Pengelolaan Dapur: Beranda dengan ringkasan pemasok, pesanan, dan batch kedaluwarsa">
+              <img src="assets/simbg4-2.jpg" alt="Sistem Informasi Pengadaan dan Pengelolaan Dapur: daftar persediaan per dapur dengan kondisi stok">
+              <img src="assets/simbg4-3.jpg" alt="Sistem Informasi Pengadaan dan Pengelolaan Dapur: daftar pesanan pembelian dengan filter status, dapur, dan tanggal">
+            </div>
+            <figcaption class="thumb-empty mono">assets/simbg4-1.jpg</figcaption>
+          </figure>
+          <div class="project-body">
+            <h3>Sistem Informasi Pengadaan dan Pengelolaan Dapur</h3>
+            <p>Modul sistem informasi untuk petugas dapur. Isinya pencatatan pemasok, pesanan bahan, penerimaan barang, stok per batch, sampai koreksi dan pembuangan stok kedaluwarsa.</p>
+            <dl class="stack">
+              <div><dt class="mono">frontend</dt><dd><ul class="chips"><li>Vue 3</li><li>TypeScript</li><li>Vite</li><li>Pinia</li><li>Axios</li><li>Vitest</li></ul></dd></div>
+              <div><dt class="mono">backend</dt><dd><ul class="chips"><li>Java 25</li><li>Spring Boot 4</li><li>Spring Data JPA</li><li>PostgreSQL 18</li><li>Docker Compose</li></ul></dd></div>
+            </dl>
+          </div>
+        </article>
 
-      <div class="project-pair">
         <article class="project" data-reveal>
           <figure class="thumb">
             <div class="thumb-track">
@@ -107,9 +107,8 @@
             <figcaption class="thumb-empty mono">assets/matchplay.jpg</figcaption>
           </figure>
           <div class="project-body">
-            <p class="project-meta mono"><span>02</span>Tugas Kelompok - Pemrograman Berbasis Platform 2025</p>
             <h3>MatchPlay</h3>
-            <p>Web untuk cari lapangan olahraga dan teman main, lengkap dengan booking dan matchmaking. Bagian saya modul blog.</p>
+            <p>Web untuk cari lapangan olahraga dan teman main, lengkap dengan booking dan matchmaking</p>
             <ul class="chips"><li>Django 5.2</li><li>Django REST Framework</li><li>PostgreSQL</li><li>Tailwind CSS</li><li>jQuery</li></ul>
             <a class="repo" href="https://github.com/PBP-E07/matchplay" target="_blank" rel="noopener">Repo di GitHub<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 16 16 8M9 8h7v7"/></svg></a>
           </div>
@@ -118,59 +117,24 @@
         <article class="project" data-reveal>
           <figure class="thumb">
             <div class="thumb-track">
-              <img src="assets/football-news.jpg" alt="Football News: daftar berita dengan kategori dan jumlah views" loading="lazy">
+              <img src="assets/tiktaktuk-1.jpg" alt="TikTakTuk: dashboard admin dengan ringkasan pengguna, acara, omzet, dan promosi aktif" loading="lazy">
+              <img src="assets/tiktaktuk-2.jpg" alt="TikTakTuk: manajemen venue dengan filter kota dan jenis seating" loading="lazy">
+              <img src="assets/tiktaktuk-3.jpg" alt="TikTakTuk: daftar tiket dengan kategori, status, kursi, dan kode QR" loading="lazy">
+              <img src="assets/tiktaktuk-4.jpg" alt="TikTakTuk: daftar order dengan status lunas dan pending" loading="lazy">
             </div>
-            <figcaption class="thumb-empty mono">assets/football-news.jpg</figcaption>
+            <figcaption class="thumb-empty mono">assets/tiktaktuk-1.jpg</figcaption>
           </figure>
           <div class="project-body">
-            <p class="project-meta mono"><span>03</span>Tugas Individu - Pemrograman Berbasis Platform 2025</p>
-            <h3>Football News</h3>
-            <p>Portal berita sepak bola tempat pengguna bisa login lalu menulis dan mengelola beritanya sendiri.</p>
-            <ul class="chips"><li>Django</li><li>Tailwind CSS</li><li>Fetch API</li><li>DOMPurify</li><li>PostgreSQL</li></ul>
-            <a class="repo" href="https://github.com/GeraldusGigih/football-news" target="_blank" rel="noopener">Repo di GitHub<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 16 16 8M9 8h7v7"/></svg></a>
+            <h3>Dashboard Pemesanan Tiket Acara</h3>
+            <p>Platform pemesanan tiket acara dengan tiga peran: admin, penyelenggara, dan pelanggan</p>
+            <dl class="stack">
+              <div><dt class="mono">frontend</dt><dd><ul class="chips"><li>Django Templates</li><li>Tailwind CSS</li><li>JavaScript</li><li>DOMPurify</li></ul></dd></div>
+              <div><dt class="mono">backend</dt><dd><ul class="chips"><li>Django 6</li><li>PostgreSQL</li><li>Gunicorn</li><li>WhiteNoise</li></ul></dd></div>
+            </dl>
+            <a class="repo" href="https://github.com/nathanslh/TK-TikTakTuk-MBG" target="_blank" rel="noopener">Repo di GitHub<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 16 16 8M9 8h7v7"/></svg></a>
           </div>
         </article>
-      </div>
-
-      <article class="project project-lead" data-reveal>
-        <figure class="thumb">
-          <div class="thumb-track">
-            <img src="assets/tiktaktuk-1.jpg" alt="TikTakTuk: dashboard admin dengan ringkasan pengguna, acara, omzet, dan promosi aktif" loading="lazy">
-            <img src="assets/tiktaktuk-2.jpg" alt="TikTakTuk: manajemen venue dengan filter kota dan jenis seating" loading="lazy">
-            <img src="assets/tiktaktuk-3.jpg" alt="TikTakTuk: daftar tiket dengan kategori, status, kursi, dan kode QR" loading="lazy">
-            <img src="assets/tiktaktuk-4.jpg" alt="TikTakTuk: daftar order dengan status lunas dan pending" loading="lazy">
-          </div>
-          <figcaption class="thumb-empty mono">assets/tiktaktuk-1.jpg</figcaption>
-        </figure>
-        <div class="project-body">
-          <p class="project-meta mono"><span>04</span>Tugas Kelompok - Basis Data 2026</p>
-          <h3>TikTakTuk: Pemesanan Tiket Acara</h3>
-          <p>Platform pemesanan tiket acara dengan tiga peran: admin, penyelenggara, dan pelanggan. Bagian saya modul tiket dan kursi, plus halaman venue dan order.</p>
-          <dl class="stack">
-            <div><dt class="mono">frontend</dt><dd><ul class="chips"><li>Django Templates</li><li>Tailwind CSS</li><li>JavaScript</li><li>DOMPurify</li></ul></dd></div>
-            <div><dt class="mono">backend</dt><dd><ul class="chips"><li>Django 6</li><li>PostgreSQL</li><li>Gunicorn</li><li>WhiteNoise</li></ul></dd></div>
-          </dl>
-          <a class="repo" href="https://github.com/nathanslh/TK-TikTakTuk-MBG" target="_blank" rel="noopener">Repo di GitHub<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 16 16 8M9 8h7v7"/></svg></a>
-        </div>
-      </article>
-
-      <article class="project project-lead" data-reveal>
-        <figure class="thumb">
-          <div class="thumb-track">
-            <img src="assets/pkpl-shop-1.jpg" alt="PKPL Shop: katalog produk dengan pencarian dan tombol login" loading="lazy">
-            <img src="assets/pkpl-shop-2.jpg" alt="PKPL Shop: riwayat pesanan pembeli dengan status Delivered dan Pending" loading="lazy">
-            <img src="assets/pkpl-shop-3.jpg" alt="PKPL Shop: dashboard kurir berisi daftar pesanan yang perlu diproses" loading="lazy">
-          </div>
-          <figcaption class="thumb-empty mono">assets/pkpl-shop-1.jpg</figcaption>
-        </figure>
-        <div class="project-body">
-          <p class="project-meta mono"><span>05</span>Tugas Kelompok - Pemrograman Keamanan Perangkat Lunak 2026</p>
-          <h3>PKPL Shop: Marketplace dengan Secure Coding</h3>
-          <p>Marketplace dengan peran pembeli, penjual, kurir, dan admin. Fokusnya keamanan: pencegahan SQL injection, broken authentication, CSRF, dan XSS, lalu diuji lewat unit test dan penetration testing.</p>
-          <ul class="chips"><li>Django 6</li><li>SQLite</li><li>Bootstrap</li><li>Bleach</li><li>django-ratelimit</li></ul>
-          <a class="repo" href="https://github.com/ahsanparvezz/TK3-bekasi" target="_blank" rel="noopener">Repo di GitHub<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 16 16 8M9 8h7v7"/></svg></a>
-        </div>
-      </article>
+      </section>
 
       <footer class="foot"></footer>
     </main>
